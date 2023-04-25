@@ -22,6 +22,8 @@ You'll need a couple things here.
 
 Once you have the data from 2 and 3, edit the leagues_to_scrape.txt file - put the hash first, then a comma, followed by the league name.
 
+You may need to drop a list of the cards in `data/cards`
+
 WARNING: Importing takes a while so I would recommend making sure the leagues_to_scrape file only contains lines for leagues you want to pull.
 
 You can run `python import_data.py` to read the ovr files into the correct place. Then you can run `python scrape_all_leagues.py` to scrape leagues/tournaments. It'll take ~10 minutes per tournament (more if it's a larger tournament) and much longer for a league pull. Just leave it running in the background and wait.
